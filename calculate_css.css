@@ -1,0 +1,52 @@
+body{
+    background:#67665a;
+}
+
+h3{
+    font-family:微软雅黑;
+    font-size: 35px;
+    text-align: center;
+    background:#b8d1ba;
+}
+#show input{
+    width:511px;
+    height:60px;
+    font-size:30px;
+    text-align: right;
+}
+
+#cuttom input{
+    width: 100px;
+    height: 70px;
+    font-size: 28px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    background-color: #fff;
+    width: 300px;
+    padding: 20px;
+    margin: 100px auto;
+}
+/*属性选择器：将所有该类型的标签都选中一起设置*/
+input[type="button"]{
+    width: 30px;
+    margin-right: 5px;
+    border-radius: 10px;
+    background: rgb(138, 120, 79);
+}
+/*使用伪类选择器改变悬浮时的颜色变化*/
+input[type="button"]:hover{
+    /*让颜色变化的是background-color，而不是单纯的color*/
+    background-color: cornflowerblue;
+    border: 3px solid;
+}

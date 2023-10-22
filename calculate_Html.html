@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>我的web计算器</title>
+    <link href="calculate_css.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="calculate_js.js"></script>
+</head>
+<body>
+<div id="calculator">
+    <div id="head"><h3>web计算器</h3></div>
+    <div id="show" align="center"><input type="text" id="text" ></div>
+    <div id="cuttom">
+        <table align="center">
+            <div class="rd" id="rd" onclick="RD()">Rad</div>
+            <tr>
+                <td><input type="button" value="7" onclick="display(7)"></td>
+                <td><input type="button" value="8" onclick="display(8)"></td>
+                <td><input type="button" value="9" onclick="display(9)"></td>
+                <td><input type="button" value="+" onclick="display('+')"></td>
+                <td><input type="button" value="-" onclick="display('-')"></td>
+                <td><input type="button" value="^" onclick="display('^(')"></td>
+                <td><input type="button" value="&radic;" onclick="display('&radic;')"></td>
+                <td><input type="button" value="π" onclick="display('π')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="4" onclick="display(4)"></td>
+                <td><input type="button" value="5" onclick="display(5)"></td>
+                <td><input type="button" value="6" onclick="display(6)"></td>
+                <td><input type="button" value="*" onclick="display('*')"></td>
+                <td><input type="button" value="/" onclick="display('/')"></td>
+                <td><input type="button" value="sin" onclick="display('sin(')"></td>
+                <td><input type="button" value="%" onclick="display('%')"></td>
+                <td><input type="button" value="E" onclick="display('E')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="1" onclick="display(1)"></td>
+                <td><input type="button" value="2" onclick="display(2)"></td>
+                <td><input type="button" value="3" onclick="display(3)"></td>
+                <td><input type="button" value="(" onclick="display('(')"></td>
+                <td><input type="button" value=")" onclick="display(')')"></td>
+                <td><input type="button" value="cos" onclick="display('cos(')"></td>
+                <td><input type="button" value="e" onclick="display('e')"></td>
+                <td><input type="button" value="log" onclick="display('log')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="." onclick="display('.')"></td>
+                <td><input type="button" value="0" onclick="display(0)"></td>
+                <td><input type="button" value="←" onclick="back()"></td>
+                <td><input type="button" value="c" onclick="reset()"></td>
+                <td><input type="button" value="=" onclick="equals()"></td>
+                <td><input type="button" value="tan" onclick="display('tan(')"></td>
+                <td><input type="button" value="ans" onclick="getAns()"></td>
+                <td><input type="button" value="历史记录" onclick="openHistoryModal()"></td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<div id="historyModal" class="modal">
+    <div class="modal-content">
+        <h1>历史记录</h1>
+        <table align="center" border="1" id ="history">
+
+        </table>
+        <button onclick="clearHistory()">清空记录</button>
+        <button onclick="closeHistoryModal()">关闭</button>
+    </div>
+</div>
+
+</body>
+</html>
+
